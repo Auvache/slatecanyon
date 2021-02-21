@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Music lesson website">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <script type="javascript" src="/js/main.js"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <a class="ham" href="javascript:void(0)" onclick="openMenu('nav')">menu</a>
+        <ul id="nav" class="nav-link-list">
+            <li><a href="#"><img id="logo" alt="ledbetter music logo" src="/img/logo.png"></a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#current-students">Current Students</a></li>
+            <li><a href="#learning-links">Learning Links</a></li>
+        </ul>
+    </div>
+
+    <section class="hero">
+        <div class="hero-head">
+            <h1 class="white">Ledbetter Music Studio</h1>
+            <p class="subheader white">Private Lessons for Flute and Clarinet</p>
+        </div>
+        <div class="arrow"><a href="#about"><img alt="arrow link down" src="/img/arrow-link.webp" /></a></div>
+    </section>
+
+    <section id="about">
+        <div class="bio-grid">
+            <div class="head"><h2>About Maddi and Jared</h2></div>
+            <div class="left">
+                <p class="strong">Jared Ledbetter</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia illo laborum vero dicta, perferendis sit architecto unde quaerat excepturi sed nemo voluptatum nostrum officiis quod quasi. Repellat modi dignissimos maxime?</p>
+            </div>
+            <div class="mid">
+                <img alt="jared and maddi" src="/img/bio-pic.jpg"/>
+            </div>
+            <div class="right">
+                <p class="strong">Maddi Ledbetter</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia illo laborum vero dicta, perferendis sit architecto unde quaerat excepturi sed nemo voluptatum nostrum officiis quod quasi. Repellat modi dignissimos maxime?</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="content-grid">
+            <div class="head"><h2>Pricing</div>
+            <div class="left">
+                <p class="strong">Jared - Clarinet</p>
+                <p>The First Lesson is Free!</p>
+                <p>Price depends on the location and duration of a lesson</p>
+                <div class="price-grid">
+                    <div class="t1 strong"><p>Location</p></div>
+                    <div class="t2 strong"><p>30 min</p></div>
+                    <div class="t3 strong"><p>60 min</p></div>
+                    <div class="n1"><p>You come to us*</p></div>
+                    <div class="n2"><p>$20</p></div>  
+                    <div class="n3"><p>$40</p></div>
+                    <div class="n4"><p>We come to you</p></div>
+                    <div class="n5"><p>$30</p></div>
+                    <div class="n6"><p>$60</p></div>
+                    <div class="n7"><p>Video chat**</p></div>
+                    <div class="n8"><p>$15</p></div>
+                    <div class="n9"><p>$30</p></div>
+                </div>
+            </div>
+            <div class="right">
+                <p class="strong">Maddi - Flute</p>
+                <p>The First Lesson is Free!</p>
+                <p>Price depends on the location and duration of a lesson</p>
+                <div class="price-grid">
+                    <div class="t1 strong"><p>Location</p></div>
+                    <div class="t2 strong"><p>30 min</p></div>
+                    <div class="t3 strong"><p>60 min</p></div>
+                    <div class="n1"><p>You come to us*</p></div>
+                    <div class="n2"><p>$10</p></div>  
+                    <div class="n3"><p>$20</p></div>
+                    <div class="n4"><p>We come to you</p></div>
+                    <div class="n5"><p>$15</p></div>
+                    <div class="n6"><p>$25</p></div>
+                    <div class="n7"><p>Video chat**</p></div>
+                    <div class="n8"><p>$10</p></div>
+                    <div class="n9"><p>$20</p></div>
+                </div>
+            </div>
+            <div class="bottom">
+                <p class="strong">Group Lesson</p>
+                <p>90 minute group lessons are held once a month for all students to learn about music theory and to get a chance to play with their peers 
+                    in a group setting. Both Maddi and Jared will lead the group lesson.
+                </p>
+                <p>The lesson is $15 for the whole 90 minute session.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="current-students">
+        <h2 style="border-bottom: 2px solid #313639; max-width: 1200px; margin: 0 auto;">Current Schedule for Student Events and Lessons</h2>
+        <div class="calendar">
+            <div class="responsive-iframe-container">
+                <iframe
+                src="https://calendar.google.com/calendar/b/4/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FDenver&amp;src=cmF2aW5pYTcyMTJAZ21haWwuY29t&amp;src=MmM4ODI0aW01ZGRtaWRucGI2OHVib2JscmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=NDVzNGFnb3F1c2tqYWg4a2N1a21lYm12bHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=N3Y2MDU3OGo4MWI1a3JzdDU5cXFhZG9pdGdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=M2ZyY3MxN2Q2a21yOWU4anJ1NTgycGNkMXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%234285F4&amp;color=%23F4511E&amp;color=%23D50000&amp;color=%238E24AA&amp;color=%23009688&amp;showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0"
+                style="border-width:0; margin-top: 20px;" width="8000" height="300" frameborder="0" scrolling="no">
+            </iframe>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="learning-links">
+        <div class="content-grid">
+            <div class="head"><h2>Learning links</h2></div>
+            <div class="left">
+                <ul class="learning-links-list">
+                    <li><a href="https://www.musictheory.net/" target="_blank" >MusicTheory.net</a></li>
+                    <li><a href="https://www.flutetunes.com/" target="_blank" >FluteTunes.com</a></li>
+                    <li><a href="http://www.thelarsenflutestudio.com/flute-related-downloads.html" target="_blank" >Fluting Resources</a></li>
+                    <li><a href="" target="_blank" ></a></li>
+                </ul>
+            </div>
+            <div class="right">content</div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="footer-content">
+            <p>You can reach us at traffikking@enslaveyouth.666</p>
+        </div>
+    </div>
+</body>
+
+</html>
