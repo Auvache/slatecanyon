@@ -31,7 +31,7 @@ h1 {
 h2 {
     font-size: 32px;
     font-weight: 400;
-    padding: 12px;
+    padding: 12px 0;
     margin: 0 0 8px;
 }
 
@@ -39,26 +39,9 @@ p {
     font-size: 18px;
     margin: 24px 0;
     line-height: 32px;
-
 }
 
-@media (max-width: 776px) {}
-
-@media (max-width: 476px) {
-    h2 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-}
-
-.strong {
-    font-weight: bold;
-    margin-top: 0;
-}
-
+/* navigation */
 .nav {
     background-color: rgba(255, 255, 255, 0.5);
     top: 0;
@@ -82,18 +65,46 @@ p {
     display: inline;
 }
 
-#logo {
-    width: 24px;
+.dropbtn {
+    background-color: #fff;
+    color: white;
+    margin: 20px;
     position: absolute;
-    top: 8px;
+    float: left;
+    top: -64px;
+    border: none;
+    cursor: pointer;
 }
 
-.blue {
-    color: #00539c;
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-.white {
-    color: #ffffff;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-left: 12px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
 }
 
 .nav-link-list a {
@@ -120,6 +131,40 @@ p {
     display: none;
 }
 
+/* main page styles */
+#page {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    position: relative;
+}
+
+#relief-society,
+#priesthood,
+#youth-and-primary,
+#sunday-school,
+#announcements {
+    padding: 40px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* footer */
+.footer {
+    min-height: 100px;
+    border-top: 1px solid #313639;
+    text-align: center;
+}
+
+.footer-content {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* media queries */
 @media (max-width: 767px) {
     .nav-link-list {
         display: inherit;
@@ -139,37 +184,19 @@ p {
     #nav {
         display: none;
     }
+
+    .nav {
+        padding: 0;
+        border-bottom: none;
+    }
 }
 
-#page {
-    width: 100%;
-    max-width: 1500px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    position: relative;
-}
+@media (max-width: 476px) {
+    h2 {
+        font-size: 20px;
+    }
 
-#relief-society,
-#priesthood,
-#youth-and-primary,
-#sunday-school,
-#announcements
- {
-    padding: 40px 0;
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-/* footer */
-.footer {
-    min-height: 100px;
-    border-top: 1px solid #313639;
-    text-align: center;
-}
-
-.footer-content {
-    width: 90%;
-    max-width: 1500px;
-    margin: 0 auto;
+    p {
+        font-size: 16px;
+    }
 }
