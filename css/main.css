@@ -5,8 +5,9 @@ html {
 
 body {
     color: #313639;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    position: relative;
 }
 
 h1,
@@ -20,133 +21,37 @@ p {
 }
 
 h1 {
-    font-size: 80px;
-    margin: 24px;
-    line-height: 80px;
+    font-size: 24px;
+    margin: 64px auto 40px;
     text-align: center;
     font-weight: 200;
-
+    font-family: 'Times New Roman', Times, serif;
 }
 
-
 h2 {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 400;
     padding: 12px;
     margin: 0 0 8px;
 }
 
 p {
-    font-size: 20px;
-    margin: 4px;
-}
-
-@media (max-width: 776px) {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        text-align: center;
-        font-weight: bold;
-    }
-    h1 {
-        font-size: 56px;
-        line-height: 70px;
-    }
-    h2 {
-        font-size: 32px;
-    }
+    font-size: 18px;
+    margin: 24px 0;
+    line-height: 32px;
 
 }
+
+@media (max-width: 776px) {}
+
 @media (max-width: 476px) {
-    h1 {
-        font-size: 32px;
-        line-height: 40px;
-    }
     h2 {
         font-size: 20px;
     }
+
     p {
         font-size: 16px;
     }
-}
-
-.view-phone {
-	display: none;
-}
-.hide-small-phone {
-	display: inherit;
-}
-.view-small-phone {
-	display: none;
-}
-.view-tablet {
-	display: none;
-}
-.hide-desktop {
-	display: none;
-}
-.view-desktop {
-	display: inherit;
-}
-@media (min-width: 768px) and (max-width: 979px) {
-	.hide-desktop {
-		display: inherit;
-	}
-	.view-desktop {
-		display: none;
-	}
-	.view-tablet {
-		display: inherit;
-	}
-	.hide-tablet {
-		display: none;
-	}
-	.hide-small-phone {
-		display: inherit;
-	}
-}
-@media (min-width: 620px) and (max-width: 767px) {
-	.hide-desktop {
-		display: inherit;
-	}
-	.view-desktop {
-		display: none;
-	}
-	.view-phone {
-		display: inherit;
-	}
-	.view-small-phone {
-		display: none;
-	}
-	.hide-phone {
-		display: none;
-	}
-	.hide-small-phone {
-		display: inherit;
-	}
-}
-@media (max-width: 619px) {
-	.hide-desktop {
-		display: inherit;
-	}
-	.view-desktop {
-		display: none;
-	}
-	.view-phone {
-		display: inherit;
-	}
-	.view-small-phone {
-		display: inherit;
-	}
-	.hide-phone {
-		display: none;
-	}
-	.hide-small-phone {
-		display: none;
-	}
 }
 
 .strong {
@@ -156,11 +61,14 @@ p {
 
 .nav {
     background-color: rgba(255, 255, 255, 0.5);
-    position: fixed;
     top: 0;
     padding: 20px 4px;
     width: 100%;
+    max-width: 1492px;
     z-index: 10;
+    text-align: center;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
 }
 
 .nav-link-list {
@@ -199,22 +107,19 @@ p {
     transition: all 1s;
 }
 
-.active {
-    background-color: red;
-}
-
 .nav-link-list a:hover,
 .nav-link-list a:focus {
-    color: black;
-    font-weight: 500;
     text-decoration: underline;
 }
+
 #nav {
     display: inherit;
 }
+
 .ham {
     display: none;
 }
+
 @media (max-width: 767px) {
     .nav-link-list {
         display: inherit;
@@ -222,26 +127,38 @@ p {
         margin: 0;
         padding: 0;
     }
+
     .nav-link-list li {
         display: inherit;
     }
+
     .ham {
         display: inherit;
     }
+
     #nav {
         display: none;
     }
 }
 
-/* hero */
-
-.hero {
-    height: 500px;
-    max-height: 80vh;
+#page {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: #ffffff;
     position: relative;
-    padding: 0;
-    text-align: center;
-    margin-top: 80px;
+}
+
+#relief-society,
+#priesthood,
+#youth-and-primary,
+#sunday-school,
+#announcements
+ {
+    padding: 40px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 /* footer */
@@ -253,6 +170,6 @@ p {
 
 .footer-content {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
 }
